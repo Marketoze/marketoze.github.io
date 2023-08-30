@@ -33,6 +33,29 @@
 
   gtag('config', 'G-RNJES663G1');
 </script>
+<style>
+    .whatsapp-button {
+    position: fixed;
+    bottom: 195px;
+    /* background: #25D366; */
+    z-index: 9999;
+    animation: bounce 2s infinite;
+    width: fit-content;
+   right: 0;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-15px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+</style>
 </head>
     <body data-offset="90" data-spy="scroll" data-target=".navbar">
     <!-- Original Preloader -->
@@ -995,7 +1018,11 @@
     </section>
     <!--Contact End-->
 
-
+ <!-- ADDED WHATSAPP -->
+                        
+                        <a href=" https://wa.me/923369295295" target="_blank" class="btn btn-success whatsapp-button">
+                          <i class="fab fa-whatsapp"></i> Let's Chat
+                        </a>
     <!--Footer Start-->
     <footer class="footer-style-1 bg-light">
         <div class="container">
