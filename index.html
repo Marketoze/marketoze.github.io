@@ -36,6 +36,30 @@
 
   gtag('config', 'G-RNJES663G1');
 </script>
+      <style>
+    .whatsapp-container {
+            display: none; /* Initially hide the button */
+            position: fixed;
+            bottom: 32px;
+            right: 20px;
+            animation: float 3s infinite ease-in-out;
+            z-index: 9999;
+        }
+
+        .whatsapp-container img {
+            width: 60px; /* Adjust the size as needed */
+            height: auto;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
 </head>
     <body data-offset="90" data-spy="scroll" data-target=".navbar">
     <!-- Original Preloader -->
@@ -997,11 +1021,25 @@
     </section>
     <!--Contact End-->
 
- <!-- ADDED WHATSAPP -->
-                        
-                        <a href="https://api.whatsapp.com/send?phone=923369295295&text=Let's%20chat..." target="_blank" class="btn btn-success whatsapp-button">
-                          <i class="fab fa-whatsapp"></i> Let's Chat
-                        </a>
+        <!-- WhatsApp button container -->
+    <div class="whatsapp-container" id="whatsapp-container">
+        <a href="https://api.whatsapp.com/send?phone=923369295295&text=I%20need%20some%20assistance%20for%20my%20project" target="_blank" rel="noopener noreferrer">
+            <img src="agency/img/whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+
+    <script>
+        // Wait for the document to fully load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Delay the initial display by 5 seconds
+            setTimeout(function() {
+                // Display the WhatsApp button
+                var whatsappContainer = document.getElementById('whatsapp-container');
+                whatsappContainer.style.display = 'block';
+            }, 5000);
+        });
+    </script>
+          <!-- Ended WhatsApp button container -->
     <!--Footer Start-->
     <footer class="footer-style-1 bg-light">
         <div class="container">
